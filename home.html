@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The Head of the Home Page with Meta Tags & Title -->
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Link to the css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>KEA app Web Prototype</title>
+    <!-- Link to Google Web Fonts Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+</head>
+
+<body>
+
+<!-- Here is the main container -->
+<div id="grid-container">
+
+        <!-- The header area -->
+        <header id="header">
+            
+            <div>
+                <!-- Logo with a link to the Home Page --> 
+                <a href="home.html" style="float: left; /* width: 50%; */
+                "><img src="images/navigation/KEA.png" alt="KEA logo" class="mainKEAlogo"></a>
+
+                <!-- Navigation Bar Menu -->
+                <ul>
+                <li> <img src="images/navigation/chat.png" class="chat-icon" alt="chat icon"></li>
+                <li><img src="images/navigation/bell.png" class="notification-icon" alt="notification icon"></li>
+                <li><img src="images/navigation/person-icon.png" class="person-icon" alt="person icon" onclick="openNav()"></li>
+                </ul>
+            </div>
+        </header>
+    
+<!-- Overlay -->    
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+     <div class="overlay-content">
+        <img src="images/eli.jpg"  alt="student photo" class="eli">
+         <br><br>
+        <a href="home.html">NOTIFICATIONS</a>
+        <a href="#">REMINDER</a>
+        <a href="#">PROFILE</a>
+        <a href="#">CHAT</a>
+        <a href="#">MMD</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">FOLDERS</a>
+        <a href="#">NEW PROJECT</a>
+        <a href="#">SETTINGS</a>
+        <a href="#">INFORMATION</a>
+        <br>
+        <button id="button">Log Out </button>
+     </div>
+</div>      
+        <!-- The main area -->
+        <main class="main">
+
+            <!-- Section 1 -->
+            <section id="section-1">
+                <img src="images/menu/notifications.png" class="icon">
+                <h3>NOTIFICATION</h3>
+            </section>
+
+             <!-- Section 2 -->
+             <section id="section-2">
+                <img src="images/menu/reminder.png" class="icon">
+                 <h3>REMINDER</h3>
+                </section>
+
+                 <!-- Section 3 -->
+             <section id="section-3">
+                <img src="images/menu/profile.png" class="icon">
+                 <h3>PROFILE</h3>
+                </section>
+
+                 <!-- Section 4 -->
+             <section id="section-4">
+                <img src="images/menu/chat.png" class="icon">
+                 <h3>CHAT</h3>
+                </section>
+
+                 <!-- Section 5 -->
+             <section id="section-5">
+                <img src="images/menu/mmd.png" class="icon">
+                 <h3>MMD</h3>
+                </section>
+
+                 <!-- Section 6 -->
+             <section id="section-6">
+                <img src="images/menu/portfolio.png" class="icon">
+                 <h3>PORTFOLIO</h3>
+                </section>
+
+                 <!-- Section 7 -->
+             <section id="section-7">
+                <img src="images/menu/files.png" class="icon">
+                 <h3>FOLDERS</h3>
+                </section>
+
+                 <!-- Section 8 -->
+             <section id="section-8">
+                <img src="images/menu/plus.png" class="icon">
+                 <h3>NEW PROJECT</h3>
+                </section>
+
+                 <!-- Section 9 -->
+             <section id="section-9">
+                <img src="images/menu/settings.png" class="icon">
+                 <h3>SETTINGS</h3>
+                </section>
+
+                 <!-- Section 10 -->
+             <section id="section-10">
+                <img src="images/menu/info.png" class="icon">
+                 <h3>INFORMATION</h3>
+                </section>
+
+        </main>
+
+        <!-- The footer area -->
+        <footer id="footer">
+
+        </footer>
+</div> 
+    
+<script>
+// Open navigation menu - person icon //
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    
+// Log Out //
+    let logOut = document.getElementById("button");
+    logOut.addEventListener("click", function() {
+        window.location.replace("login.html");
+    });
+    
+// New Project //
+    let NewP = document.getElementById("section-8");
+    NewP.addEventListener("click", function() {
+        window.location.replace("newproject.html");
+    });
+    
+</script>
+    
+</body>
+</html>
