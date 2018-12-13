@@ -1,0 +1,94 @@
+body {
+    font-family: "roboto", sans-serif;
+    background-color: #EA4D44;
+}
+    
+/* user name and password labels */
+input[type=uname]{
+    width: 80%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    left: 40px;
+    top: 230px;
+    background-color: #f0837c;
+    
+    
+}
+
+input[type=password]  {
+    width: 80%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    left: 40px;
+    top: 290px;
+    background-color: #f0837c;
+    
+    
+}
+
+input:hover {
+    background-color: white;
+    color: black;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+    font-weight: 500;
+}
+   
+/* Kea Logo image */
+.KEAlogo {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    width: 70%;
+    
+}
+
+/* Log in Button */
+button {
+    background-color: #FFFFFF;
+    color: #111111;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    position: absolute;
+    left: 105px;
+    top: 350px;
+    
+
+}
+
+button:hover {
+    background-color: #F3F3F3;
+}
+   
+/* Forgotten your password */
+span.psw {
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    left: 113px;
+    top: 425px;
+}
+
+a,
+a:link,
+a:active {
+    text-decoration: none;
+    color:#fff;
+}

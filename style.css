@@ -1,0 +1,376 @@
+html, body {
+    margin:0px;
+    padding:0px;
+    font-family: "roboto", sans-serif;
+}
+
+/* Border Box */
+* {
+    box-sizing: border-box;
+  }
+
+
+/****** H O M E   P A G E ******/
+
+/* Navigation menu ICONS */
+ul {
+    list-style-type: none;
+    display: inline;
+    float: right;
+}
+
+li {
+    display: inline;
+}
+
+/* Style for Overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: #EA4D44;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 35px;
+  left: 35px;
+  text-align: left;
+}
+
+.overlay a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #cccccc;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 35px;
+  font-size: 45px;
+}
+
+.eli {
+    height: 200px;
+
+}
+
+#button {
+  background-color: white;
+  border: none;
+  color: #111111;
+  padding: 4px 32px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
+  position: absolute;
+  padding left: 100px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+/* This is the Main GRID Layout for the HOME PAGE */
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+             "header-area header-area"
+             "main-area main-area"
+             "footer-area footer-area";
+        }
+/* This is the HEADER area */
+header {
+    grid-area: header-area;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+        
+.mainKEAlogo {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 60px;
+    
+}
+
+.chat-icon {
+    height: 30px;
+}
+
+.notification-icon {
+    height: 30px;
+}
+
+.person-icon {
+    height: 30px;
+    padding-right: 10px; 
+}
+
+
+/* This is the MAIN area */
+.main {
+    grid-area: main-area;
+    display: grid;
+    grid-template-areas: 
+         "section1 section2"
+         "section3 section4"
+         "section5 section6"
+         "section7 section8"
+         "section9 section10";
+    }
+#section-1 {
+    grid-area: section1;
+    height:250px;
+    background-color: #122746;
+    height: 120px;
+}
+#section-2 {
+    grid-area: section2;
+    height:250px;
+    background-color: #0C2244;
+    height: 120px;
+}
+#section-3 {
+    grid-area: section3;
+    height:250px;
+    background-color: #0C2244;
+    height: 120px;
+}
+#section-4 {
+    grid-area: section4;
+    height:250px;
+    background-color: #122746;
+    height: 120px;
+}
+#section-5 {
+    grid-area: section5;
+    height:250px;
+    background-color: #122746;
+    height: 120px;
+}
+#section-6 {
+    grid-area: section6;
+    height:250px;
+    background-color: #0C2244;
+    height: 120px;
+}
+#section-7 {
+    grid-area: section7;
+    height:250px;
+    background-color: #0C2244;
+    height: 120px;
+}
+#section-8 {
+    grid-area: section8;
+    height:250px;
+    background-color: #122746;
+    height: 120px;
+}
+#section-9 {
+    grid-area: section9;
+    height:250px;
+    background-color: #122746;
+    height: 120px;
+}
+#section-10 {
+    grid-area: section10;
+    height:250px;
+    background-color: #0C2244;
+    height: 120px;
+}
+
+
+/* The Style for the TEXT TITLES */
+section h3 {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+/* The Style for the ICONS */
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    height: 70px;
+    
+
+}
+
+
+/****** N E W   P R O J E C T   P A G E ******/
+
+/* Style for new project page */
+#main {
+    background-color: #0E152A;
+    grid-area: main-area;
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.np {
+    display:block!important;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    height: 120px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+/* Personal Button */
+#personal {
+    background-color: #091E3D;
+    height: 258px;
+    width: 415px;
+    padding-top: 40px;
+}
+
+/* Group Button */
+#group {
+    background-color: #0C2244;
+    height: 259px;
+    width: 415px;
+    padding-top: 40px;
+}
+
+
+/****** P E R S O N A L   P R O J E C T   P A G E ******/
+/* Style for CREATE button */
+#createbutton {
+    width: 45%;
+    padding: 7px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    background-color: #EA4D44;
+    color: white;
+}
+
+/* Style for Input for name */
+input[type=text] {
+    height: 30px;
+    width: 80%;
+}
+
+/* Style for checkbox buttons */
+.pp {
+    display: block;
+    color: white;
+    font-size: 13px;
+}
+
+/* Style for the whole form */
+#personalproject {
+    padding-left: 60px;
+    background-color: #0C2244;
+    height: 517px;
+}
+
+
+/****** E M P T Y   P R O J E C T   P A G E ******/
+
+/* Style for title */
+.basicux {
+    
+}
+
+/* Style for plus button and paragrpah */
+.item {
+    padding-top: 190px;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+}
+
+#plusbutton {
+    font-size: 50px;
+    height: 70px;
+    width: 70px;
+    background-color: #EA4D44;
+    border: none;
+    color: white;
+}
+
+/****** D O C U M E N T   P A G E ******/
+.items3 {
+    background-color: #EA4D44;
+}
+
+.div1 {
+    background-color: white;
+    padding-top: 180px;
+}
+
+/* Style of ICONS */
+#document-icon {
+    height: 70px;
+    margin: 15px;
+    width: auto;
+    padding-left: 40px;
+}
+
+.folder-icon {
+    height: 65px;
+    margin: 15px;
+    width: auto;
+    padding-left: 35px;
+}
+
+.scan-icon {
+    height: 65px;
+    margin: 15px;
+    width: auto;
+    padding-left: 25px;
+}
+
+/****** D O C U M E N T  1   P A G E ******/
+.yourtext {
+    background-color: white;
+    width: 370px;
+    height: 480px;
+    
+}
+
+.background {
+    background-color: #0E152A;
+    height: 517px;  
+}
+
+.white {
+    background-color: #0E152A;
+    height: 500px;
+    width: 20px;
+    padding-right: 40px;
+}
