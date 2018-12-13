@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The Head of the Home Page with Meta Tags & Title -->
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Link to the css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>KEA app Web Prototype</title>
+    <!-- Link to Google Web Fonts Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+</head>
+
+<body>
+<!-- Here is the main container -->
+<div id="grid-container">
+        <!-- The header area -->
+        <header id="header">
+            
+            <div>
+                <!-- Logo with a link to the Home Page --> 
+                <a href="home.html" style="float: left; /* width: 50%; */
+                "><img src="images/navigation/KEA.png" alt="KEA logo" class="mainKEAlogo"></a>
+
+                <!-- Navigation Bar Menu -->
+                <ul>
+                <li> <img src="images/navigation/chat.png" class="chat-icon" alt="chat icon"></li>
+                <li><img src="images/navigation/bell.png" class="notification-icon" alt="notification icon"></li>
+                <li><img src="images/navigation/person-icon.png" class="person-icon" alt="person icon" onclick="openNav()"></li>
+                </ul>
+            </div>
+        </header>
+    
+<!-- Overlay -->    
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+     <div class="overlay-content">
+        <img src="images/eli.jpg"  alt="student photo" class="eli">
+         <br><br>
+        <a href="home.html">NOTIFICATIONS</a>
+        <a href="#">REMINDER</a>
+        <a href="#">PROFILE</a>
+        <a href="#">CHAT</a>
+        <a href="#">MMD</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">FOLDERS</a>
+        <a href="#">NEW PROJECT</a>
+        <a href="#">SETTINGS</a>
+        <a href="#">INFORMATION</a>
+        <br>
+        <button id="button">Log Out </button>
+     </div>
+  </div> 
+</div>
+    
+<!-- The main area -->
+<main id="main">
+    
+    <!-- The main page title -->  
+    <h1 class="basicux">BASIC UX</h1>
+    
+</main>
+    
+    <div class="item">
+    <p> Create item</p>
+    <button id="plusbutton"><b>+</b></button>
+    </div>
+    
+    
+    
+<script>
+// Open navigation menu - person icon //
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    
+// Log Out //
+let logOut = document.getElementById("button");
+logOut.addEventListener("click", function() {
+        
+window.location.replace("login.html");
+});
+    
+// Create item //
+let createItem = document.getElementById("plusbutton");
+createItem.addEventListener("click", function() {
+        
+window.location.replace("document.html");
+});
+</script>
+       
+</body>
+</html>

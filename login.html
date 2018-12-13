@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <title>Kea mobile app</title>
+    <!-- Link to Google Web Fonts Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+<!-- The main content of the web page -->
+  <main>
+    <!-- Big Logo of KEA Here -->
+    <img class="KEAlogo" src="images/KEA-logo.png" alt="Logo KEA" class="KEAlogo">
+    
+<!-- This is the form -->
+    <form id="form">
+        
+            <!-- This is the username input -->
+            <label for="uname"></label>
+            <input type="uname" placeholder="Username" name="uname" id="name" required>
+            <!-- This is the password input-->
+            <label for="psw"></label>
+            <input type="password" placeholder="Password" name="psw" id="password" required>
+        
+<!-- This is the Log In Button -->
+        <div id="button">
+           <button type="button"><b>Log In</b></button>
+        </div>
+        
+<!-- This is the link for forgotten password -->
+            <span class="psw"><a href="#">Forgot your password password?</a></span>
+    </form> 
+  </main>
+    
+<script>
+// Add Click to Log in //
+    let logIn = document.getElementById("button");
+    logIn.addEventListener("click", function() {
+        window.location.replace("home.html");
+    });
+</script>
+    
+</body>
+</html>
